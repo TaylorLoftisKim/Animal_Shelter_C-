@@ -1,0 +1,26 @@
+@{
+  Layout="Shared/_Layout.cshtml";
+}
+<h1>Add a New Animal</h1>
+<form class="animal_form" action="/animals/confirm" method="post">
+
+  <div class="form-group">
+    <label for="animal-name">What is the animal's name?</label>
+    <input type="text" name="animal-name" id="animal-name" required autofocus>
+  </div>
+  <div class="form-group">
+    <label for="animal-gender">What is the gender?</label>
+    <input type="text" name="animal-gender" id="animal-gender" required>
+  </div>
+  <div class="form-group">
+    <label for="animal-admittance">What is the date of Admittance?</label>
+    <input type="text" name="animal-admittance" id="animal-admittance" placeholder="mm/dd/yyyy" pattern="\d+/\d+/\d{4}" required>
+  </div>
+  <div class="form-group">
+    <label for="animal-breed">What is the breed?</label>
+    <input type="text" name="animal-breed" id="animal-breed" required>
+  </div>
+
+  <button type="submit">Submit</button>
+
+</form>

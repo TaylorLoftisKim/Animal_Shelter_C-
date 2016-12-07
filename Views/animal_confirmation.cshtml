@@ -1,0 +1,12 @@
+@{
+  Layout="Shared/_Layout.cshtml";
+}
+
+<h1>You added @Model.GetName()</h1>
+<h2><strong>Here are the details: </strong></h2>
+<h3>Gender: @Model.GetGender()</h3>
+<h3>Admittance Date: @Model.GetAdmittanceDateString()</h3>
+<h3>Breed: @Model.GetBreed()</h3>
+
+Return to the <a href="/">homepage</a>
+View current <a href="/animals">animals</a>

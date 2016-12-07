@@ -1,0 +1,16 @@
+@{
+  Layout="Shared/_Layout.cshtml";
+}
+
+<h1>Animals currently in this shelter: </h1>
+@foreach(var animal in @Model)
+{
+  <h3>Name: @animal.GetName()</h3>
+  <h3>Gender: @animal.GetGender()</h3>
+  <h3>Admittance Date: @animal.GetAdmittanceDateString()</h3>
+  <h3>Breed: @animal.GetBreed()</h3>
+  <br>
+}
+
+<h3>Return to the <a href="/">homepage</a></h3>
+<h3>Click to <a href="/animals/delete">clear out</a> current animals</h3>

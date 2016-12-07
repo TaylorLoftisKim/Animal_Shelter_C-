@@ -7,7 +7,7 @@ namespace AnimalShelter
   {
     public static SqlConnection Connection()
     {
-      SqlConnection conn = new SqlConnection(DBConfiguration.ConectionString);
+      SqlConnection conn = new SqlConnection(DBConfiguration.ConnectionString);
       return conn;
     }
   }
